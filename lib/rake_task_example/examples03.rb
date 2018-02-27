@@ -7,6 +7,7 @@ require 'rake'
 require 'rake/tasklib'
 
 module Phil
+  # Creating our custom Rake Task class.
   class FooTask < Rake::TaskLib
     # Setting the name of the task to be used.
     attr_accessor :name
@@ -49,11 +50,11 @@ module Phil
 end
 
 # Call our Custom Rake task with dependencies not specifying a block.
-Phil::FooTask.new( :foo, [:call_me_first, :call_me_second] )
+Phil::FooTask.new(:foo, %i[call_me_first call_me_second])
 
 namespace :fake do
   # Call our custom Rake task with dependencies again, without the ()
-  Phil::FooTask.new :bar, [:call_me_first, :call_me_second]
+  Phil::FooTask.new :bar, %i[call_me_first call_me_second]
 end
 
 # Without a desc comment, these commands are not visible. Handy for "hidden"
