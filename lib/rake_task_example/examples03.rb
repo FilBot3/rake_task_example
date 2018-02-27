@@ -1,8 +1,3 @@
-#
-# Documentation:
-#   https://lostechies.com/derickbailey/2009/09/17/how-a-net-developer-hacked-out-a-rake-task/
-#   https://lostechies.com/derickbailey/2009/09/18/an-alternate-way-to-handle-task-dependencies-in-custom-rake-tasks/
-
 require 'rake'
 require 'rake/tasklib'
 

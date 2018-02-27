@@ -1,6 +1,6 @@
 # RakeTaskExample
 
-The RakeTaskExample gem is an example of how to create Rake tasks using [Rake](https://github.com/ruby/rake)'s `Rake::TaskLib` and how to use plain Rake syntax to do predefined tasks. I read a lot of the Rake, Bundler and some other examples as well as some blogs linked below. This isn't going to be a very useful RubyGem, but more of an informative one. 
+The RakeTaskExample gem is an example of how to create Rake tasks using [Rake](https://github.com/ruby/rake)'s `Rake::TaskLib` and how to use plain Rake syntax to do predefined tasks. I read a lot of the Rake, Bundler and some other examples as well as some blogs linked below. This isn't going to be a very useful RubyGem, but more of an informative one.
 
 ## Installation
 
@@ -11,14 +11,14 @@ In your Gemfile,
 gem 'rake_task_example', git: 'https://github.com/predatorian3/rake_task_example'
 ```
 
-Then use `bundler` to install the dependencies. 
+Then use `bundler` to install the dependencies.
 ```bash
 bundle install
 ```
 
 ## Usage
 
-The `rake_task_example` RubyGem is to be used in Rakefiles as a library to add functionality wihtout cluttering up the Rakefile or adding a ton of file to a [`rakelib`](https://ruby.github.io/rake/doc/rakefile_rdoc.html#label-Rakefile+Path) folder. This will then allow you to use the Ruby DSL portion of the gem, or the plain Rake tasks. 
+The `rake_task_example` RubyGem is to be used in Rakefiles as a library to add functionality wihtout cluttering up the Rakefile or adding a ton of file to a [`rakelib`](https://ruby.github.io/rake/doc/rakefile_rdoc.html#label-Rakefile+Path) folder. This will then allow you to use the Ruby DSL portion of the gem, or the plain Rake tasks.
 
 ```ruby
 # Rakefile.rb
@@ -26,6 +26,8 @@ require 'rake_task_example/examples01'
 RakeTaskExample::Example01.new
 
 require 'rake_task_example/examples02'
+
+require 'rake_task_example/examples03'
 ```
 
 ## Development
@@ -44,7 +46,7 @@ The gem is available as open source under the terms of the [MIT License](http://
 
 ## Code of Conduct
 
-Everyone interacting in the RakeTaskExample project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/rake_task_example/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the RakeTaskExample project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/predatorian3/rake_task_example/blob/master/CODE_OF_CONDUCT.md).
 
 ## References
 
